@@ -15,7 +15,12 @@ namespace API_exploration.Contract
 
         public IEnumerable<InitialModel> GetWhateverItReturns()
         {
-            throw new NotImplementedException();
+            var whatever = new List<InitialModel>
+            {
+                new InitialModel { id = 0, Date = DateTime.Now, Location = "Tokio", RainChance = 90, Summary = "Stormy", TemperatureC = 30 },
+                new InitialModel { id = 0, Date = DateTime.Now, Location = "Tokio", RainChance = 90, Summary = "Stormy", TemperatureC = 30 }
+            };
+            return whatever;
         }
     }
 }
