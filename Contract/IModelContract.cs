@@ -6,7 +6,7 @@ using API_exploration.Models;
 
 namespace API_exploration.Contract
 {
-    public class IModelContract
+    public interface IModelContract
     {
         IEnumerable<InitialModel> GetWhateverItReturns();
     }
