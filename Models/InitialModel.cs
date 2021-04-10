@@ -7,5 +7,14 @@ namespace API_exploration.Models
 {
     public class InitialModel
     {
+        public DateTime Date { get; set; }
+
+        public string Location { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public int RainChance { get; set; }
+
+        public string Summary { get; set; }
     }
 }
