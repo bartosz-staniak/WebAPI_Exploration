@@ -31,6 +31,7 @@ namespace API_exploration.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
+                Rain = 5,
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
