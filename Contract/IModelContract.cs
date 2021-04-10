@@ -9,6 +9,6 @@ namespace API_exploration.Contract
     public interface IModelContract
     {
         IEnumerable<InitialModel> GetWhateverItReturns();
-        InitialModel GetAllById();
+        InitialModel GetAllById(int id);
     }
 }
