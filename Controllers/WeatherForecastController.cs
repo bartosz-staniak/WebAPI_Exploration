@@ -30,6 +30,7 @@ namespace API_exploration.Controllers
             return Enumerable.Range(1, 10).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
+                Location = "Tokio",
                 TemperatureC = rng.Next(-20, 55),
                 RainChance = rng.Next(0,90),
                 Summary = Summaries[rng.Next(Summaries.Length)]
