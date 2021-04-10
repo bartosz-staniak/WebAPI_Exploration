@@ -8,7 +8,7 @@ namespace API_exploration.Contract
 {
     public class MockModelContract : IModelContract
     {
-        public InitialModel GetAllById(int id)
+        public InitialModel GetOneById(int id)
         {
             throw new NotImplementedException();
         }
