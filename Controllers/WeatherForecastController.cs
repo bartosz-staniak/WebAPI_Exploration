@@ -16,6 +16,11 @@ namespace API_exploration.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
         };
 
+        private static readonly string[] Cities = new[]
+        {
+            "Tokio", "Sydney", "New York", "London"
+        };
+
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -30,7 +35,7 @@ namespace API_exploration.Controllers
             return Enumerable.Range(1, 10).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
-                Location = "Tokio",
+                Location = Cities[rng.Next(Cities.Length)],
                 TemperatureC = rng.Next(-20, 55),
                 RainChance = rng.Next(0,90),
                 Summary = Summaries[rng.Next(Summaries.Length)]
