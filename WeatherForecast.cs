@@ -4,6 +4,7 @@ namespace API_exploration
 {
     public class WeatherForecast
     {
+        public int id { get; set; }
         public DateTime Date { get; set; }
 
         public string Location { get; set; }
