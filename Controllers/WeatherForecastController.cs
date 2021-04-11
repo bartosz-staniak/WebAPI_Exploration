@@ -65,7 +65,7 @@ namespace API_exploration.Controllers
         [HttpGet("GetWhaterverItReturnsMocked")]
         public IEnumerable<WeatherForecast> GetWhateverItReturnsMocked()
         {
-            var rng = new Random();
+            var 
             return ;
         }
 
