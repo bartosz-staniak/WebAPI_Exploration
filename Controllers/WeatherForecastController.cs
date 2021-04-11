@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using API_exploration.Contract;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -60,6 +61,7 @@ namespace API_exploration.Controllers
             .ToArray();
         }
 
+        private readonly MockModelContract _modelContract = new MockModelContract();
         [HttpGet("GetWhaterverItReturnsMocked")]
         public IEnumerable<WeatherForecast> GetWhateverItReturnsMocked()
         {
