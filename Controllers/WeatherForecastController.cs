@@ -72,8 +72,8 @@ namespace API_exploration.Controllers
         [HttpGet("GetOneByIdMocked")]
         public ActionResult <WeatherForecast> GetOneByIdMocked()
         {
-            var whatevers = _modelContract.GetOneById(0);
-            return Ok(whatevers);
+            var getById = _modelContract.GetOneById(0);
+            return Ok(getById);
         }
 
     }
