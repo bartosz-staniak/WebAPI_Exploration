@@ -69,5 +69,12 @@ namespace API_exploration.Controllers
             return Ok(whatevers);
         }
 
+        [HttpGet("GetWhaterverItReturnsMocked")]
+        public ActionResult<IEnumerable<WeatherForecast>> GetWhateverItReturnsMocked()
+        {
+            var whatevers = _modelContract.GetWhateverItReturns();
+            return Ok(whatevers);
+        }
+
     }
 }
