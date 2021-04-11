@@ -72,7 +72,7 @@ namespace API_exploration.Controllers
         [HttpGet("{id}")]
         public ActionResult <WeatherForecast> GetOneByIdMocked(int id)
         {
-            var getById = _modelContract.GetOneById(id);
+            var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
             return Ok(getById);
         }
 
