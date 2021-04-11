@@ -44,7 +44,7 @@ namespace API_exploration.Controllers
             .ToArray();
         }
 
-        [HttpGet]
+        [HttpGet("GetTwenty")]
         public IEnumerable<WeatherForecast> GetTwenty()
         {
             var rng = new Random();
