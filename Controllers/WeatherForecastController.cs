@@ -13,7 +13,7 @@ namespace API_exploration.Controllers
     public class WeatherForecastController : ControllerBase
     {
 
-        public WeatherForecastController(IModelContract contract)
+        public WeatherForecastController(IModelContract modelContract)
         {
 
         }
