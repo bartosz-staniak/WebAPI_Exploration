@@ -15,7 +15,7 @@ namespace API_exploration.Controllers
 
         public WeatherForecastController(IModelContract modelContract)
         {
-
+            _modelContract = modelContract;
         }
 
         private static readonly string[] Summaries = new[]
