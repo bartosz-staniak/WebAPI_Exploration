@@ -67,7 +67,7 @@ namespace API_exploration.Controllers
             .ToArray();
         }
 
-        private readonly MockModelContract _modelContract = new MockModelContract();
+        // private readonly MockModelContract _modelContract = new MockModelContract();
         [HttpGet("GetWhaterverItReturnsMocked")]
         public ActionResult <IEnumerable<WeatherForecast>> GetWhateverItReturnsMocked()
         {
