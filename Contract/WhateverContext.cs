@@ -14,6 +14,6 @@ namespace API_exploration.Contract
 
         }
 
-        public int MyProperty { get; set; }
+        public DbSet<InitialModel> InitialModels { get; set; }
     }
 }
