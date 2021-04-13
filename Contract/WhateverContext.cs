@@ -9,5 +9,9 @@ namespace API_exploration.Contract
     public class WhateverContext : DbContext
 
     {
+        public WhateverContext()
+        {
+
+        }
     }
 }
