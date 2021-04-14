@@ -27,7 +27,7 @@ namespace API_exploration
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WhateverContext>(options => options
-            .useSqlServer(Configuration.GetConnectionString));
+            .useSqlServer(Configuration.GetConnectionString("WhateverConnection")));
 
             services.AddControllers();
 
