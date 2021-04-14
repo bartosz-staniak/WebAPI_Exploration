@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,7 +28,7 @@ namespace API_exploration
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WhateverContext>(options => options
-            .useSqlServer(Configuration.GetConnectionString("WhateverConnection")));
+            .UseSqlServer(Configuration.GetConnectionString("WhateverConnection")));
 
             services.AddControllers();
 
