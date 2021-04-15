@@ -4,3 +4,4 @@ dotnet ef database update
 
 GIT:
 git update-index --assume-unchanged [path]
+git update-index --no-assume-unchanged [path]
