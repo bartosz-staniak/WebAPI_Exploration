@@ -21,6 +21,7 @@ namespace API_exploration.Models
         public int TemperatureC { get; set; }
 
         [Required]
+        [MaxLength(3)]
         public int RainChance { get; set; }
 
         [Required]
