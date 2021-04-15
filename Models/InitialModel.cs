@@ -7,6 +7,7 @@ namespace API_exploration.Models
 {
     public class InitialModel
     {
+        [Key] // totally optional in this migration case
         public int id { get; set; }
         public DateTime Date { get; set; }
 
