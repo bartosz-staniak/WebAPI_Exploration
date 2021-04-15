@@ -22,6 +22,7 @@ namespace API_exploration.Models
 
         [Required]
         [MaxLength(3)]
+        [Range(0,100)]
         public int RainChance { get; set; }
 
         [Required]
