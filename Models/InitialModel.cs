@@ -18,6 +18,7 @@ namespace API_exploration.Models
         public string Location { get; set; }
 
         [Required]
+        [MaxLength(3)]
         public int TemperatureC { get; set; }
 
         [Required]
