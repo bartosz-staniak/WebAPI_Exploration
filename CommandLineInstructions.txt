@@ -1,2 +1,5 @@
 dotnet ef migrations add
 dotnet ef migrations remove
+
+GIT:
+git update-index --assume-unchanged [path]
