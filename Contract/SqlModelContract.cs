@@ -10,12 +10,12 @@ namespace API_exploration.Contract
     {
         public InitialModel GetOneById(int id)
         {
-            throw new NotImplementedException();
+            
         }
 
         public IEnumerable<InitialModel> GetWhateverItReturns()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
