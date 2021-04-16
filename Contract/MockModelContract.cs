@@ -8,11 +8,6 @@ namespace API_exploration.Contract
 {
     public class MockModelContract : IModelContract
     {
-        public InitialModel GetOneById(int id)
-        {
-            return new InitialModel { id = 0, Date = DateTime.Now, Location = "Tokio", RainChance = 90, Summary = "Stormy", TemperatureC = 30 };
-        }
-
         public IEnumerable<InitialModel> GetWhateverItReturns()
         {
             var whatever = new List<InitialModel>
@@ -22,5 +17,11 @@ namespace API_exploration.Contract
             };
             return whatever;
         }
+
+        public InitialModel GetOneById(int id)
+        {
+            return new InitialModel { id = 0, Date = DateTime.Now, Location = "Tokio", RainChance = 90, Summary = "Stormy", TemperatureC = 30 };
+        }
+
     }
 }
