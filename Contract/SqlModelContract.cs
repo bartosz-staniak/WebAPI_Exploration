@@ -10,7 +10,7 @@ namespace API_exploration.Contract
     {
         public SqlModelContract(WhateverContext context)
         {
-
+            _context = context;
         }
 
         public InitialModel GetOneById(int id)
