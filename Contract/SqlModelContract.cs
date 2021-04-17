@@ -8,7 +8,7 @@ namespace API_exploration.Contract
 {
     public class SqlModelContract : IModelContract
     {
-        public SqlModelContract()
+        public SqlModelContract(WhateverContext context)
         {
 
         }
