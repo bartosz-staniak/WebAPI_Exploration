@@ -17,12 +17,12 @@ namespace API_exploration.Contract
 
         public InitialModel GetOneById(int id)
         {
-            return _context.InitialModels.ToList();
+            
         }
 
         public IEnumerable<InitialModel> GetWhateverItReturns()
         {
-            
+            return _context.InitialModels.ToList();
         }
     }
 }
