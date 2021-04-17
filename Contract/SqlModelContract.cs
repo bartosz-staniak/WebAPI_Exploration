@@ -17,7 +17,7 @@ namespace API_exploration.Contract
 
         public InitialModel GetOneById(int id)
         {
-            
+            return null;
         }
 
         public IEnumerable<InitialModel> GetWhateverItReturns()
