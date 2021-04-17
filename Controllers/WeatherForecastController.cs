@@ -19,6 +19,21 @@ namespace API_exploration.Controllers
             _modelContract = modelContract;
         }
 
+        // private readonly MockModelContract _modelContract = new MockModelContract();
+        [HttpGet("GetWhaterverItReturnsMocked")]
+        public ActionResult <IEnumerable<WeatherForecast>> GetWhateverItReturnsMocked()
+        {
+            var whatevers = _modelContract.GetWhateverItReturns();
+            return Ok(whatevers);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult <WeatherForecast> GetOneByIdMocked(int id)
+        {
+            var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
+            return Ok(getById);
+        }
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
@@ -67,21 +82,6 @@ namespace API_exploration.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
-        }
-
-        // private readonly MockModelContract _modelContract = new MockModelContract();
-        [HttpGet("GetWhaterverItReturnsMocked")]
-        public ActionResult <IEnumerable<WeatherForecast>> GetWhateverItReturnsMocked()
-        {
-            var whatevers = _modelContract.GetWhateverItReturns();
-            return Ok(whatevers);
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult <WeatherForecast> GetOneByIdMocked(int id)
-        {
-            var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
-            return Ok(getById);
         }
 
     }
