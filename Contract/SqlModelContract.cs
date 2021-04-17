@@ -8,6 +8,8 @@ namespace API_exploration.Contract
 {
     public class SqlModelContract : IModelContract
     {
+        private readonly WhateverContext _context;
+
         public SqlModelContract(WhateverContext context)
         {
             _context = context;
