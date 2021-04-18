@@ -2,7 +2,7 @@
 
 namespace API_exploration
 {
-    public class Cities
+    public class Locations
     {
         public string Location { get; set; }
 
