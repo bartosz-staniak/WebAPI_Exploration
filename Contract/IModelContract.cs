@@ -14,7 +14,7 @@ namespace API_exploration.Contract
 
     public interface IAnotherContract
     {
-        IEnumerable<InitialModel> GetAllCities();
-        InitialModel GetOneCityByName(string location);
+        IEnumerable<InitialModel> GetAllLocations();
+        InitialModel GetOneLocationByName(string location);
     }
 }
