@@ -11,4 +11,9 @@ namespace API_exploration.Contract
         IEnumerable<InitialModel> GetWhateverItReturns();
         InitialModel GetOneById(int id);
     }
+
+    public interface IAnotherContract
+    {
+
+    }
 }
