@@ -29,15 +29,4 @@ namespace API_exploration.Models
         [Required]
         public string Summary { get; set; }
     }
-
-    public class AnotherModel
-    {
-        [Key]
-        public string Location { get; set; }
-
-        [Required]
-        public string Location_Size { get; set; }
-        [Required]
-        public string Population { get; set; }
-    }
 }
