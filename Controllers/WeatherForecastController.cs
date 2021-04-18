@@ -20,7 +20,7 @@ namespace API_exploration.Controllers
         }
 
         // private readonly MockModelContract _modelContract = new MockModelContract();
-        [HttpGet("GetWhaterverItReturns")] // used to be "GetWhaterverItReturnsMocked"
+        [HttpGet("GetWhateverItReturns")] // used to be "GetWhaterverItReturnsMocked" with the typo
         public ActionResult <IEnumerable<WeatherForecast>> GetWhateverItReturns() // used to be GetHwateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
