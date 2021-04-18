@@ -17,7 +17,7 @@ namespace API_exploration.Contract
 
         public InitialModel GetOneById(int id)
         {
-            throw new NotImplementedException("The method needs to be implemented!");
+            return _context.InitialModels.FirstOrDefault(p => p.Id == id);
         }
 
         public IEnumerable<InitialModel> GetWhateverItReturns()
