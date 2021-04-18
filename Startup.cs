@@ -33,6 +33,7 @@ namespace API_exploration
             services.AddControllers();
 
             // services.AddScoped<IModelContract, MockModelContract>();
+            services.AddScoped<IModelContract, MockModelContract>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
