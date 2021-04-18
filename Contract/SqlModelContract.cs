@@ -17,7 +17,7 @@ namespace API_exploration.Contract
 
         public InitialModel GetOneById(int id)
         {
-            return _context.InitialModels.FirstOrDefault(p => p.Id == id);
+            return _context.InitialModels.FirstOrDefault(p => p.id == id);
         }
 
         public IEnumerable<InitialModel> GetWhateverItReturns()
