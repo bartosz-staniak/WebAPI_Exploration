@@ -21,7 +21,7 @@ namespace API_exploration.Controllers
 
         // private readonly MockModelContract _modelContract = new MockModelContract();
         [HttpGet("GetWhaterverItReturnsMocked")]
-        public ActionResult <IEnumerable<WeatherForecast>> GetWhateverItReturnsMocked()
+        public ActionResult <IEnumerable<WeatherForecast>> GetWhateverItReturns() // used to be GetHwateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
             return Ok(whatevers);
