@@ -11,10 +11,4 @@ namespace API_exploration.Contract
         IEnumerable<InitialModel> GetWhateverItReturns();
         InitialModel GetOneById(int id);
     }
-
-    public interface IAnotherContract
-    {
-        IEnumerable<InitialModel> GetAllLocations();
-        InitialModel GetOneLocationByName(string location);
-    }
 }
