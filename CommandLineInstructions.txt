@@ -3,6 +3,7 @@ dotnet ef migrations remove
 dotnet ef database update
 
 dotnet build //--- used to check for errors and warnings
+dotnet run //--- run API without the IIS Express
 
 GIT:
 git update-index --assume-unchanged [path]
