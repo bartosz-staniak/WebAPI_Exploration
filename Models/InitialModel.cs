@@ -28,5 +28,8 @@ namespace API_exploration.Models
 
         [Required]
         public string Summary { get; set; }
+
+        [Required]
+        public string SubmittedBy { get; set; }
     }
 }
