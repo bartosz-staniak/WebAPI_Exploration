@@ -18,5 +18,7 @@ namespace API_exploration.DTOs
         public int RainChance { get; set; }
 
         public string Summary { get; set; }
+
+        public string SubmittedBy { get; set; }
     }
 }
