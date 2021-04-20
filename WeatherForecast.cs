@@ -16,5 +16,7 @@ namespace API_exploration
         public int RainChance { get; set; }
 
         public string Summary { get; set; }
+
+        public string SubmittedBy { get; set; }
     }
 }
