@@ -2,6 +2,11 @@ dotnet ef migrations add
 dotnet ef migrations remove
 dotnet ef database update
 
+{ // used the following as attempts to update db and remove migration did not work
+dotnet ef database update 0
+dotnet ef migrations remove
+}
+
 dotnet build //--- used to check for errors and warnings
 dotnet run //--- run API without the IIS Express
 
