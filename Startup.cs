@@ -32,6 +32,8 @@ namespace API_exploration
 
             services.AddControllers();
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             // services.AddScoped<IModelContract, MockModelContract>();
             services.AddScoped<IModelContract, SqlModelContract>();
         }
