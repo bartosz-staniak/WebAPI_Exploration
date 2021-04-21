@@ -8,5 +8,9 @@ namespace API_exploration.Profiles
 {
     public class WhateverProfile : Profile
     {
+        public WhateverProfile()
+        {
+
+        }
     }
 }
