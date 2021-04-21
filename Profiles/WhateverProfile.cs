@@ -10,7 +10,7 @@ namespace API_exploration.Profiles
     {
         public WhateverProfile()
         {
-
+            CreateMap<InitialModel, WhateverReadDTO>();
         }
     }
 }
