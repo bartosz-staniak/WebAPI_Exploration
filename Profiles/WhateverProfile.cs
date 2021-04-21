@@ -1,4 +1,5 @@
-﻿using API_exploration.Models;
+﻿using API_exploration.DTOs;
+using API_exploration.Models;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
