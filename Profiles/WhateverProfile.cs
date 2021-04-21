@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API_exploration.Profiles
 {
-    public class WhateverProfile
+    public class WhateverProfile : Profile
     {
     }
 }
