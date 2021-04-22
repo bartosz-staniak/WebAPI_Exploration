@@ -33,7 +33,7 @@ namespace API_exploration.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult <WhateverReadDTO> GetOneById(int id) // used to be GetOneByIdMocked
+        public ActionResult <WhateverReadDTO> GetOneById(int id) // used to be <WeatherForecast // used to be GetOneByIdMocked
         {
             var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
             if (getById != null)
