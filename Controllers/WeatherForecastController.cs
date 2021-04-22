@@ -1,4 +1,5 @@
 ﻿using API_exploration.Contract;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
