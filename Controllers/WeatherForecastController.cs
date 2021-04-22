@@ -15,6 +15,8 @@ namespace API_exploration.Controllers
     {
 
         private readonly IModelContract _modelContract;
+        private readonly IMapper _mapper;
+
         public WeatherForecastController(IModelContract modelContract, IMapper mapper)
         {
             _modelContract = modelContract;
