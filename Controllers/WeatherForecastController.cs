@@ -18,6 +18,7 @@ namespace API_exploration.Controllers
         public WeatherForecastController(IModelContract modelContract, IMapper mapper)
         {
             _modelContract = modelContract;
+            _mapper = mapper;
         }
 
         // private readonly MockModelContract _modelContract = new MockModelContract();
