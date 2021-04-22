@@ -31,7 +31,10 @@ namespace API_exploration.Controllers
         public ActionResult <WeatherForecast> GetOneById(int id) // used to be GetOneByIdMocked
         {
             var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
-            // return Ok(getById);
+            if (getById != null)
+            {
+                // return Ok(getById);
+            }
             return NotFound();
         }
 
