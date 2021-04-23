@@ -9,7 +9,7 @@ namespace API_exploration.DTOs
     {
         public int id { get; set; }
 
-        public DateTime Date { get; set; }
+        public DateTime DateAndTime { get; set; }
 
         public string Location { get; set; }
         
