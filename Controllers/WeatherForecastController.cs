@@ -29,7 +29,7 @@ namespace API_exploration.Controllers
         public ActionResult <IEnumerable<WhateverReadDTO>> GetWhateverItReturns() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
-            return Ok(whatevers);
+            return Ok(whatevers); // old return used to be Ok(whatevers)
         }
 
         [HttpGet("{id}")]
