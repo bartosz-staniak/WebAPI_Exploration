@@ -38,7 +38,7 @@ namespace API_exploration.Controllers
             var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
             if (getById != null)
             {
-                return Ok(_mapper.Map<WhateverReadDTO>(getById));
+                return Ok(_mapper.Map<WhateverReadDTO>(getById)); // used to be (getById)
             }
             return NotFound();
         }
