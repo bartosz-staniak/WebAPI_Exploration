@@ -43,7 +43,7 @@ namespace API_exploration.Controllers
             return NotFound();
         }
 
-        [HttpGet("GetWhateverItReturns")] // used to be "GetWhaterverItReturnsMocked" with the typo
+        [HttpGet("GetWhateverItReturnsUnchanged")] // used to be "GetWhaterverItReturnsMocked" with the typo
         public ActionResult<IEnumerable<WeatherForecast>> GetWhateverItReturnsUnchanged() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
