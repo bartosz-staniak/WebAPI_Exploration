@@ -43,6 +43,13 @@ namespace API_exploration.Controllers
             return NotFound();
         }
 
+        [HttpGet("GetWhateverItReturns")] // used to be "GetWhaterverItReturnsMocked" with the typo
+        public ActionResult<IEnumerable<WhateverReadDTO>> GetWhateverItReturns() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
+        {
+            var whatevers = _modelContract.GetWhateverItReturns();
+            return Ok(_mapper.Map<IEnumerable<WhateverReadDTO>>(whatevers)); // old return used to be Ok(whatevers)
+        }
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
