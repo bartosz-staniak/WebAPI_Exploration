@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace API_exploration.Controllers
 {
     [ApiController]
+    [Route("api/[controller]")]
     public class AnotherController : ControllerBase
     {
     }
