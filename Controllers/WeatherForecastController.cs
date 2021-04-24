@@ -44,7 +44,7 @@ namespace API_exploration.Controllers
         }
 
         [HttpGet("GetWhateverItReturns")] // used to be "GetWhaterverItReturnsMocked" with the typo
-        public ActionResult<IEnumerable<WhateverReadDTO>> GetWhateverItReturnsUnchanged() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
+        public ActionResult<IEnumerable<WeatherForecast>> GetWhateverItReturnsUnchanged() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
             return Ok(_mapper.Map<IEnumerable<WhateverReadDTO>>(whatevers)); // old return used to be Ok(whatevers)
