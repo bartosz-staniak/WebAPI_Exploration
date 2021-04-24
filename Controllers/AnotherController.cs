@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API_exploration.Controllers
 {
-    public class AnotherController
+    public class AnotherController : ControllerBase
     {
     }
 }
