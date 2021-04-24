@@ -5,7 +5,7 @@ namespace API_exploration.Contract
 {
     public interface IAnotherContract
     {
-        IEnumerable<InitialModel> GetAllLocations();
+        IEnumerable<AnotherModel> GetAllLocations();
         InitialModel GetOneLocationByName(string location);
     }
 }
