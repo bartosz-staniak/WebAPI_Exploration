@@ -25,7 +25,7 @@ namespace API_exploration.Controllers
         }
 
         // private readonly MockModelContract _modelContract = new MockModelContract();
-        [HttpGet("GetWhateverItReturn")] // used to be "GetWhaterverItReturnsMocked" with the typo
+        [HttpGet("GetWhateverItReturns")] // used to be "GetWhaterverItReturnsMocked" with the typo
         public ActionResult <IEnumerable<WhateverReadDTO>> GetWhateverItReturns() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
