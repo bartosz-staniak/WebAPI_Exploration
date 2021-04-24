@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API_exploration.Contract
 {
-    public class AnotherContext
+    public class AnotherContext : DbContext
     {
     }
 }
