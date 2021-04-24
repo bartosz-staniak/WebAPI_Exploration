@@ -8,5 +8,9 @@ namespace API_exploration.Contract
 {
     public class AnotherContext : DbContext
     {
+        public AnotherContext()
+        {
+
+        }
     }
 }
