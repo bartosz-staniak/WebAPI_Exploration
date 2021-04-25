@@ -22,7 +22,7 @@ namespace API_exploration.Controllers
         public ActionResult<IEnumerable<Locations>> Get()
         {
             var anotherLocations = _anotherContract.GetAllLocations();
-            return new Locations;
+            return Ok(anotherLocations);
         }
     }
 }
