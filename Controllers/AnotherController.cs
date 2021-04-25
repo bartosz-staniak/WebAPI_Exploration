@@ -11,7 +11,7 @@ namespace API_exploration.Controllers
     public class AnotherController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<Locations> Get()
         {
             return;
         }
