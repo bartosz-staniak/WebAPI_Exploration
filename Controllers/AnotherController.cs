@@ -19,7 +19,7 @@ namespace API_exploration.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Locations> Get()
+        public ActionResult<IEnumerable<Locations>> Get()
         {
             return new Locations;
         }
