@@ -8,6 +8,11 @@ namespace API_exploration.Contract
 {
     public class SqlAnotherContract : IAnotherContract
     {
+        public SqlAnotherContract()
+        {
+
+        }
+
         public IEnumerable<AnotherModel> GetAllLocations()
         {
             throw new NotImplementedException();
