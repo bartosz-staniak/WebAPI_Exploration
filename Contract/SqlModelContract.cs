@@ -27,7 +27,7 @@ namespace API_exploration.Contract
 
         public bool SaveChanges()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
         
         public void CreateWhatever(WhateverContext whatever)
