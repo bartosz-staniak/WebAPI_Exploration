@@ -11,6 +11,8 @@ namespace API_exploration.Controllers
     [Route("api/[controller]")]
     public class AnotherController : ControllerBase
     {
+        private readonly IAnotherContract _anotherContract;
+
         public AnotherController(IAnotherContract anotherContract)
         {
             _anotherContract = anotherContract;
