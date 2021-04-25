@@ -10,7 +10,7 @@ namespace API_exploration.Controllers
     [Route("api/[controller]")]
     public class AnotherController : ControllerBase
     {
-        public AnotherController()
+        public AnotherController(IAnotherContract anotherContract)
         {
 
         }
