@@ -11,7 +11,7 @@ namespace API_exploration.Models
         public string Location_Size { get; set; }
         [Required]
         public string Population { get; set; }
-
+        [Required]
         public string SubmittedBy { get; set; }
     }
 }
