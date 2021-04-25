@@ -13,7 +13,7 @@ namespace API_exploration.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-        
+            return;
         }
     }
 }
