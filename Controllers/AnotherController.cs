@@ -26,7 +26,7 @@ namespace API_exploration.Controllers
             {
                 return Ok(getByLocation);
             }
-            
+            return NotFound();
         }
 
         [HttpGet]
