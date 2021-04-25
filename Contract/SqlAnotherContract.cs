@@ -17,7 +17,7 @@ namespace API_exploration.Contract
         
         public AnotherModel GetOneLocationByName(string location)
         {
-            throw _context.InitialModels.FirstOrDefault(p => p.id == id);
+            throw _context.AnotherModels.FirstOrDefault(p => p.id == id);
         }
         
         public IEnumerable<AnotherModel> GetAllLocations()
