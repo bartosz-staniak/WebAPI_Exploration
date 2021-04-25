@@ -10,6 +10,11 @@ namespace API_exploration.Controllers
     [Route("api/[controller]")]
     public class AnotherController : ControllerBase
     {
+        public AnotherController()
+        {
+
+        }
+
         [HttpGet]
         public IEnumerable<Locations> Get()
         {
