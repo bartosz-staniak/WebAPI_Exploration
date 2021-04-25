@@ -15,11 +15,6 @@ namespace API_exploration.Contract
             _context = context;
         }
 
-        public void CreateWhatever(WhateverContext whatever)
-        {
-            throw new NotImplementedException();
-        }
-
         public InitialModel GetOneById(int id)
         {
             return _context.InitialModels.FirstOrDefault(p => p.id == id);
@@ -31,6 +26,11 @@ namespace API_exploration.Contract
         }
 
         public bool SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+        
+        public void CreateWhatever(WhateverContext whatever)
         {
             throw new NotImplementedException();
         }
