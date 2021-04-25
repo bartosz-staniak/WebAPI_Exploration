@@ -13,6 +13,7 @@ namespace API_exploration.Controllers
     {
         private readonly IAnotherContract _anotherContract;
 
+        [HttpGet]
         public AnotherController(IAnotherContract anotherContract)
         {
             _anotherContract = anotherContract;
