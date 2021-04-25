@@ -22,7 +22,7 @@ namespace API_exploration.Contract
         
         public IEnumerable<AnotherModel> GetAllLocations()
         {
-            throw new NotImplementedException();
+            return _context.AnotherModels.ToList();
         }
 
     }
