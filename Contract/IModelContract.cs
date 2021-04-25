@@ -10,5 +10,6 @@ namespace API_exploration.Contract
     {
         IEnumerable<InitialModel> GetWhateverItReturns();
         InitialModel GetOneById(int id);
+        void CreateWhatever(WhateverContext whatever);
     }
 }
