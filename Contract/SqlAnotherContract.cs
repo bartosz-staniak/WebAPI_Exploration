@@ -8,6 +8,8 @@ namespace API_exploration.Contract
 {
     public class SqlAnotherContract : IAnotherContract
     {
+        private readonly AnotherContext _context;
+
         public SqlAnotherContract(AnotherContext context)
         {
             _context = context;
