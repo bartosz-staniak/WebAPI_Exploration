@@ -10,7 +10,7 @@ namespace API_exploration.Contract
     {
         public SqlAnotherContract(AnotherContext context)
         {
-
+            _context = context;
         }
 
         public IEnumerable<AnotherModel> GetAllLocations()
