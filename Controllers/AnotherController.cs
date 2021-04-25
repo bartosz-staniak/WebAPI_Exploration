@@ -13,7 +13,7 @@ namespace API_exploration.Controllers
         [HttpGet]
         public IEnumerable<Locations> Get()
         {
-            return;
+            return new Locations;
         }
     }
 }
