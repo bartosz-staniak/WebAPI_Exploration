@@ -18,6 +18,11 @@ namespace API_exploration.Controllers
             _anotherContract = anotherContract;
         }
 
+        public ActionResult<Locations> GetOneLocation()
+        {
+
+        }
+
         [HttpGet]
         public ActionResult<IEnumerable<Locations>> Get()
         {
