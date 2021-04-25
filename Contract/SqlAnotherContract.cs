@@ -14,15 +14,16 @@ namespace API_exploration.Contract
         {
             _context = context;
         }
-
+        
+        public AnotherModel GetOneLocationByName(string location)
+        {
+            throw new NotImplementedException();
+        }
+        
         public IEnumerable<AnotherModel> GetAllLocations()
         {
             throw new NotImplementedException();
         }
 
-        public AnotherModel GetOneLocationByName(string location)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
