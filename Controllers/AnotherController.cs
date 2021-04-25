@@ -18,7 +18,7 @@ namespace API_exploration.Controllers
             _anotherContract = anotherContract;
         }
 
-        [HttpGet]
+        [HttpGet("{location}")]
         public ActionResult<Locations> GetLocationByName(string location)
         {
             var getByLocation = _anotherContract.GetOneLocationByName(location);
