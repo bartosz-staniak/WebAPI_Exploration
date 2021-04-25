@@ -13,6 +13,6 @@ namespace API_exploration.Contract
 
         }
 
-        public DbSet<AnotherModel>
+        public DbSet<AnotherModel> AnotherModels { get; set; }
     }
 }
