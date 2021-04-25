@@ -8,6 +8,8 @@ namespace API_exploration.Contract
 {
     public interface IModelContract
     {
+        bool SaveChanges();
+
         IEnumerable<InitialModel> GetWhateverItReturns();
         InitialModel GetOneById(int id);
         void CreateWhatever(WhateverContext whatever);
