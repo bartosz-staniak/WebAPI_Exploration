@@ -31,7 +31,7 @@ namespace API_exploration
             .UseSqlServer(Configuration.GetConnectionString("WhateverConnection")));
 
             services.AddDbContext<AnotherContext>(options => options
-            .UseSqlServer(Configuration.GetConnectionString("WhateverConnection")));
+            .UseSqlServer(Configuration.GetConnectionString("WhateverConnection"))); // attempt to add another table to the database
 
             services.AddControllers();
 
