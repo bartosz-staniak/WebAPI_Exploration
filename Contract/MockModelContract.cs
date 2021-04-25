@@ -23,5 +23,14 @@ namespace API_exploration.Contract
             return new InitialModel { id = 0, Date = DateTime.Now, Location = "Tokio", RainChance = 90, Summary = "Stormy", TemperatureC = 30 };
         }
 
+        public bool SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateWhatever(WhateverContext whatever)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
