@@ -12,7 +12,7 @@ namespace API_exploration.Controllers
     {
         public AnotherController(IAnotherContract anotherContract)
         {
-
+            _anotherContract = anotherContract;
         }
 
         [HttpGet]
