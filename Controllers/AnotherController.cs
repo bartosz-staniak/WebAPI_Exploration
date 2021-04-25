@@ -20,7 +20,7 @@ namespace API_exploration.Controllers
 
         public ActionResult<Locations> GetLocationByName(string location)
         {
-
+            return _anotherContract.GetOneLocationByName(location);
         }
 
         [HttpGet]
