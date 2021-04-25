@@ -2,6 +2,7 @@ dotnet ef migrations add
 dotnet ef migrations add MigrationName --context ContextName
 dotnet ef migrations remove
 dotnet ef database update
+dotnet ef database update --context ContextName
 
 { // used the following as attempts to update db and remove migration did not work
 dotnet ef database update 0
