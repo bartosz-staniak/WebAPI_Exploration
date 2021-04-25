@@ -40,7 +40,7 @@ namespace API_exploration
             // services.AddScoped<IModelContract, MockModelContract>();
             services.AddScoped<IModelContract, SqlModelContract>();
 
-            services.AddScoped<IAnotherContract, SqlAnotherContract() >;
+            services.AddScoped<IAnotherContract, SqlAnotherContract>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
