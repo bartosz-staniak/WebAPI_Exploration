@@ -30,6 +30,9 @@ namespace API_exploration
             services.AddDbContext<WhateverContext>(options => options
             .UseSqlServer(Configuration.GetConnectionString("WhateverConnection")));
 
+            services.AddDbContext<AnotherContext>(options => options
+            .UseSqlServer(Configuration.GetConnectionString("WhateverConnection")));
+
             services.AddControllers();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
