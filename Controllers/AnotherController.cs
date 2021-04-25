@@ -18,7 +18,7 @@ namespace API_exploration.Controllers
             _anotherContract = anotherContract;
         }
 
-        public ActionResult<Locations> GetLocationByName()
+        public ActionResult<Locations> GetLocationByName(string location)
         {
 
         }
