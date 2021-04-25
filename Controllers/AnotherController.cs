@@ -24,9 +24,9 @@ namespace API_exploration.Controllers
             var getByLocation = _anotherContract.GetOneLocationByName(location);
             if (getByLocation != null)
             {
-
+                return Ok(getByLocation);
             }
-            return Ok(getByLocation);
+            
         }
 
         [HttpGet]
