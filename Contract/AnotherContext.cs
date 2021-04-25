@@ -12,5 +12,7 @@ namespace API_exploration.Contract
         {
 
         }
+
+        public DbSet
     }
 }
