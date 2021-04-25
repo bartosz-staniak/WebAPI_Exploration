@@ -8,7 +8,7 @@ namespace API_exploration.Contract
 {
     public class SqlAnotherContract : IAnotherContract
     {
-        public SqlAnotherContract()
+        public SqlAnotherContract(AnotherContext context)
         {
 
         }
