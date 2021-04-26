@@ -19,6 +19,6 @@ namespace API_exploration.DTOs
 
         public string Summary { get; set; }
 
-        public string SubmittedBy { get; set; } // don't want to expose this field to API users
+        public string SubmittedBy { get; set; }
     }
 }
