@@ -34,7 +34,7 @@ namespace API_exploration.Contract
         {
             if (whatever == null)
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(whatever));
             }
             
         }
