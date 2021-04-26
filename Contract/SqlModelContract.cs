@@ -36,7 +36,7 @@ namespace API_exploration.Contract
             {
                 throw new ArgumentNullException(nameof(whatever));
             }
-            _context.InitialModels.Add(whatever);
+            _context.WeatherForecast.Add(whatever);
         }
     }
 }
