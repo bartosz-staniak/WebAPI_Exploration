@@ -36,7 +36,7 @@ namespace API_exploration.Contract
             {
                 throw new ArgumentNullException(nameof(whatever));
             }
-            
+            return _context.InitialModels.Add(whatever);
         }
     }
 }
