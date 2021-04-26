@@ -7,7 +7,7 @@ namespace API_exploration.DTOs
 {
     public class WhateverCreateDTO
     {
-        public int id { get; set; }
+        // public int id { get; set; }
 
         public DateTime DateAndTime { get; set; }
 
