@@ -7,7 +7,7 @@ namespace API_exploration.DTOs
 {
     public class WhateverCreateDTO
     {
-        // public int id { get; set; }
+        // public int id { get; set; } // the database will take care of assigning an id
 
         public DateTime DateAndTime { get; set; }
 
