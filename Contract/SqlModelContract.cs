@@ -34,9 +34,9 @@ namespace API_exploration.Contract
         {
             if (whatever == null)
             {
-
+                throw new NotImplementedException();
             }
-            throw new NotImplementedException();
+            
         }
     }
 }
