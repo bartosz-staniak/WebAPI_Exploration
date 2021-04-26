@@ -27,7 +27,7 @@ namespace API_exploration.Contract
 
         public bool SaveChanges()
         {
-            _context.SaveChanges();
+            return (_context.SaveChanges() >= 0);
         }
         
         public void CreateWhatever(WhateverContext whatever)
