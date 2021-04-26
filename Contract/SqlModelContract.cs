@@ -30,7 +30,7 @@ namespace API_exploration.Contract
             return (_context.SaveChanges() >= 0);
         }
         
-        public void CreateWhatever(WhateverContext whatever)
+        public void CreateWhatever(InitialModel whatever)
         {
             if (whatever == null)
             {
