@@ -32,6 +32,10 @@ namespace API_exploration.Contract
         
         public void CreateWhatever(WhateverContext whatever)
         {
+            if (whatever == null)
+            {
+
+            }
             throw new NotImplementedException();
         }
     }
