@@ -22,7 +22,7 @@ namespace API_exploration.Models
         public int TemperatureC { get; set; }
 
         [Required]
-        [MaxLength(3)]
+        [MaxLength(3)] // field can store values with more than 3 digits
         [Range(0,100)] // this validation attempt does not work
         public int RainChance { get; set; }
 
