@@ -28,7 +28,7 @@ namespace API_exploration.Contract
             throw new NotImplementedException();
         }
 
-        public void CreateWhatever(WhateverContext whatever)
+        public void CreateWhatever(InitialModel initialModel)
         {
             throw new NotImplementedException();
         }
