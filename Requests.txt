@@ -2,8 +2,8 @@ POST
 {
 	"DateTime" : "2021-04-03T05:56:13.5746676+02:00",
 	"Location" : "SomePlace",
-	"TemperatureC" : "20",
-	"RainChance" : "10",
+	"TemperatureC" : 20,
+	"RainChance" : 10,
 	"Summary" : "Sunny",
 	"SubmittedBy" : "Someone"
 }
