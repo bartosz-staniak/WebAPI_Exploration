@@ -14,7 +14,7 @@ namespace API_exploration.Models
         [Required]
         public DateTime Date { get; set; }
 
-        [Required]
+        [Required] // field can be empty when just "" are sent
         public string Location { get; set; }
 
         [Required]
@@ -26,10 +26,10 @@ namespace API_exploration.Models
         [Range(0,100)] // this validation attempt does not work
         public int RainChance { get; set; }
 
-        [Required]
+        [Required] // field can be empty when just "" are sent
         public string Summary { get; set; }
 
-        [Required]
+        [Required] // field can be empty when just "" are sent
         public string SubmittedBy { get; set; }
     }
 }
