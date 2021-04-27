@@ -18,7 +18,7 @@ namespace API_exploration.Models
         public string Location { get; set; }
 
         [Required]
-        [MaxLength(3)]
+        [MaxLength(3)] // field can store values with more than 3 digits
         public int TemperatureC { get; set; }
 
         [Required]
