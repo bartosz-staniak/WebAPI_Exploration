@@ -51,6 +51,10 @@ namespace API_exploration.Controllers
         }
 
         [HttpPost]
+        public ActionResult<WhateverReadDTO> CreateWhatever(WhateverReadDTO whateverReadDTO)
+        {
+
+        }
 
         private static readonly string[] Summaries = new[]
         {
