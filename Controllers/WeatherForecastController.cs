@@ -55,6 +55,7 @@ namespace API_exploration.Controllers
         public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
+            _modelContract.CreateWhatever(initialModel);
         }
 
         private static readonly string[] Summaries = new[]
