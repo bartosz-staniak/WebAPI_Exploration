@@ -51,7 +51,7 @@ namespace API_exploration.Controllers
         }
 
         [HttpPost]
-        public ActionResult<WhateverReadDTO> CreateWhatever(WhateverReadDTO whateverReadDTO)
+        public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
 
         }
