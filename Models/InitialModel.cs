@@ -23,7 +23,7 @@ namespace API_exploration.Models
 
         [Required]
         [MaxLength(3)]
-        [Range(0,100)]
+        [Range(0,100)] // this validation attempt does not work
         public int RainChance { get; set; }
 
         [Required]
