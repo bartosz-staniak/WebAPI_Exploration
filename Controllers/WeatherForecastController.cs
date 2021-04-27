@@ -56,6 +56,7 @@ namespace API_exploration.Controllers
         {
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
             _modelContract.CreateWhatever(initialModel);
+            _modelContract.SaveChanges();
 
             return Ok(initialModel);
         }
