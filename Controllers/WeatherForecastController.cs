@@ -53,7 +53,7 @@ namespace API_exploration.Controllers
         [HttpPost]
         public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
-
+            var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
         }
 
         private static readonly string[] Summaries = new[]
