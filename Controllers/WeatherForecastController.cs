@@ -1,5 +1,6 @@
 ﻿using API_exploration.Contract;
 using API_exploration.DTOs;
+using API_exploration.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
