@@ -50,6 +50,8 @@ namespace API_exploration.Controllers
             return Ok(whatevers); // old return used to be Ok(whatevers)
         }
 
+        [HttpPost]
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
