@@ -12,7 +12,7 @@ namespace API_exploration.Models
         public int id { get; set; }
         
         [Required]
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } // date is always set to 0001-01-01T00:00:00
 
         [Required] // field can be empty when just "" are sent
         public string Location { get; set; }
