@@ -1,6 +1,6 @@
 POST
 {
-    "DateTime" : "2021-04-03"
+    "DateTime" : "2021-04-03T05:56:13.5746676+02:00"
 
     "Location" : "SomePlace"
 
