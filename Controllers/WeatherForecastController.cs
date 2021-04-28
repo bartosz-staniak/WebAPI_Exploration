@@ -54,6 +54,10 @@ namespace API_exploration.Controllers
         [HttpPost]
         public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
+            if (whateverCreateDTO.TemperatureC > 100)
+            {
+                return BadRequest(new { error = "The temperature cannot be higher than 100" });
+            }
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
             _modelContract.CreateWhatever(initialModel);
             _modelContract.SaveChanges();
