@@ -60,6 +60,9 @@ namespace API_exploration.Controllers
             } else if (whateverCreateDTO.RainChance > 100)
             {
                 return BadRequest(new { error = "Rain chance cannot be greater than 100%" });
+            } else if (whateverCreateDTO.RainChance < 0)
+            {
+                return BadRequest(new { error = "Rain chance cannot be lower than 0 per cent." });
             }
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
             _modelContract.CreateWhatever(initialModel);
