@@ -57,6 +57,9 @@ namespace API_exploration.Controllers
             if (whateverCreateDTO.TemperatureC > 100)
             {
                 return BadRequest(new { error = "The temperature cannot be higher than 100" });
+            } else if (whateverCreateDTO.RainChance > 100)
+            {
+                return BadRequest(new { error = "Rain chance cannot be greater than 100%" });
             }
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
             _modelContract.CreateWhatever(initialModel);
