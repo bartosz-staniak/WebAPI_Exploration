@@ -54,9 +54,9 @@ namespace API_exploration.Controllers
         [HttpPost]
         public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
-            if (whateverCreateDTO.TemperatureC > 100)
+            if (whateverCreateDTO.TemperatureC > 60)
             {
-                return BadRequest(new { error = "The temperature cannot be higher than 100" });
+                return BadRequest(new { error = "The temperature cannot be higher than 60" });
             } else if (whateverCreateDTO.RainChance > 100)
             {
                 return BadRequest(new { error = "Rain chance cannot be greater than 100%" });
