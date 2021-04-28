@@ -57,6 +57,9 @@ namespace API_exploration.Controllers
             if (whateverCreateDTO.TemperatureC > 60)
             {
                 return BadRequest(new { error = "The temperature cannot be higher than 60" });
+            } else if (whateverCreateDTO.TemperatureC < -100)
+            {
+                return BadRequest(new { error = "The temperature cannot be lower than -100" });
             } else if (whateverCreateDTO.RainChance > 100)
             {
                 return BadRequest(new { error = "Rain chance cannot be greater than 100%" });
