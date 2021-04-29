@@ -66,7 +66,7 @@ namespace API_exploration.Controllers
             } else if (whateverCreateDTO.RainChance < 0)
             {
                 return BadRequest(new { error = "Rain chance cannot be lower than 0 per cent." });
-            } else if (whateverCreateDTO.Location == "")
+            } else if (whateverCreateDTO.Location || whateverCreateDTO.Summary == "")
             {
                 return BadRequest(new { error = "Location field must not be empty." });
             }
