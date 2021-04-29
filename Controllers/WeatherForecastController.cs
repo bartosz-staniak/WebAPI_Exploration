@@ -69,6 +69,9 @@ namespace API_exploration.Controllers
             } else if (whateverCreateDTO.Location == "")
             {
                 return BadRequest(new { error = "Location field must not be empty." });
+            } else if (whateverCreateDTO.Summary == "")
+            {
+                return BadRequest(new { error = "Summary field must not be empty." });
             }
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
             _modelContract.CreateWhatever(initialModel);
