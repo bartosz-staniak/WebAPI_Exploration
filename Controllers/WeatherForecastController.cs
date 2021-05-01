@@ -72,6 +72,9 @@ namespace API_exploration.Controllers
             } else if (whateverCreateDTO.Summary == "")
             {
                 return BadRequest(new { error = "Summary field must not be empty." });
+            } else if (whateverCreateDTO.SubmittedBy == "")
+            {
+                return BadRequest(new { error = "SubmittedBy field must not be empty." });
             }
             var initialModel = _mapper.Map<InitialModel>(whateverCreateDTO);
             _modelContract.CreateWhatever(initialModel);
