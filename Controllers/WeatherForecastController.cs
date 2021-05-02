@@ -55,6 +55,9 @@ namespace API_exploration.Controllers
         [HttpPost]
         public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
+
+            [RegularExpression(@"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$",
+            ErrorMessage = "Characters are not allowed.")]
             if (whateverCreateDTO.TemperatureC > 60)
             {
                 return BadRequest(new { error = "The temperature cannot be higher than 60" });
