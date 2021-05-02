@@ -74,7 +74,10 @@ namespace API_exploration.Controllers
             } else if (whateverCreateDTO.Summary == "")
             {
                 return BadRequest(new { error = "Summary field must not be empty." });
-            } else if (whateverCreateDTO.SubmittedBy == "")
+            } else if (
+                [RegularExpression(@"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$",
+                ErrorMessage = "Characters are not allowed.")]
+                whateverCreateDTO.SubmittedBy == "")
             {
                 return BadRequest(new { error = "SubmittedBy field must not be empty." });
             }
