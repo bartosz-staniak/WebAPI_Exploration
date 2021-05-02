@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -52,6 +53,8 @@ namespace API_exploration.Controllers
         }
 
         [HttpPost]
+        [RegularExpression(@"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$",
+        ErrorMessage = "Characters are not allowed.")]
         public ActionResult<WhateverReadDTO> CreateWhatever(WhateverCreateDTO whateverCreateDTO)
         {
             if (whateverCreateDTO.TemperatureC > 60)
