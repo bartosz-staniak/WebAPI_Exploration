@@ -84,7 +84,7 @@ namespace API_exploration.Controllers
 
             var InitialModelReadDTO = _mapper.Map<WhateverReadDTO>(whateverCreateDTO);
 
-            return Ok(initialModel); // used to be Ok(initialModel) but it also responded back with the SubmittedBy field
+            return Ok(InitialModelReadDTO); // used to be Ok(initialModel) but it also responded back with the SubmittedBy field
         }
 
         private static readonly string[] Summaries = new[]
