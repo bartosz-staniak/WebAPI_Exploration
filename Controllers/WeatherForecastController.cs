@@ -34,7 +34,7 @@ namespace API_exploration.Controllers
             return Ok(_mapper.Map<IEnumerable<WhateverReadDTO>>(whatevers)); // old return used to be Ok(whatevers)
         }
 
-        [HttpGet("{id}", Name = "GetOneById")]
+        [HttpGet("{id}", Name = "GetOneById")] // this Name attribute could cause some issues with async programming
         public ActionResult <WhateverReadDTO> GetOneById(int id) // used to be <WeatherForecast // used to be GetOneByIdMocked
         {
             var getById = _modelContract.GetOneById(id); // it makes a difference, an error is returned when a non int is used
