@@ -82,7 +82,7 @@ namespace API_exploration.Controllers
             _modelContract.CreateWhatever(initialModel);
             _modelContract.SaveChanges();
 
-            var InitialModelReadDTO = _mapper.Map<WhateverReadDTO>(whateverCreateDTO);
+            var InitialModelReadDTO = _mapper.Map<WhateverReadDTO>(initialModel);
 
             return Ok(InitialModelReadDTO); // used to be Ok(initialModel) but it also responded back with the SubmittedBy field
         }
