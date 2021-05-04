@@ -18,7 +18,7 @@ namespace API_exploration.DTOs
 
         public int TemperatureC { get; set; }
 
-        [Range(0,50)]
+        [Range(0,55)]
         public int RainChance { get; set; }
 
         [Required]
