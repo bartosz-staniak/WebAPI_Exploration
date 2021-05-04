@@ -20,6 +20,7 @@ namespace API_exploration.DTOs
 
         public int RainChance { get; set; }
 
+        [Required]
         public string Summary { get; set; }
 
         [Required]
