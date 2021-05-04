@@ -21,6 +21,7 @@ namespace API_exploration.DTOs
 
         public string Summary { get; set; }
 
+        [Required]
         public string SubmittedBy { get; set; }
     }
 }
