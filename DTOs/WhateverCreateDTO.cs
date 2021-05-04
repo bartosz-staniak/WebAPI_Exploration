@@ -10,7 +10,7 @@ namespace API_exploration.DTOs
     {
         // public int id { get; set; } // the database will take care of assigning an id
 
-        [Required]
+        [Required] // these Data Annotations make the response return a 400 Bad request code instead of a 500 server error code
         public DateTime DateAndTime { get; set; }
 
         [Required]
