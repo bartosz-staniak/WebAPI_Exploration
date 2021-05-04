@@ -9,6 +9,7 @@ namespace API_exploration.DTOs
     {
         // public int id { get; set; } // the database will take care of assigning an id
 
+        [Required]
         public DateTime DateAndTime { get; set; }
 
         public string Location { get; set; }
