@@ -84,7 +84,7 @@ namespace API_exploration.Controllers
 
             var InitialModelReadDTO = _mapper.Map<WhateverReadDTO>(initialModel);
 
-            return CreatedAtRoute(nameof(GetOneById), new { id = whateverReadDTO.id }, whateverReadDTO); 
+            return CreatedAtRoute(nameof(GetOneById), new { id = InitialModelReadDTO.id }, InitialModelReadDTO); 
             // return Ok(InitialModelReadDTO); // used to be Ok(initialModel) but it also responded back with the SubmittedBy field
         }
 
