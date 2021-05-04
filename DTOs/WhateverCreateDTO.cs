@@ -13,6 +13,7 @@ namespace API_exploration.DTOs
         [Required]
         public DateTime DateAndTime { get; set; }
 
+        [Required]
         public string Location { get; set; }
 
         public int TemperatureC { get; set; }
