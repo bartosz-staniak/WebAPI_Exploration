@@ -92,6 +92,7 @@ namespace API_exploration.Controllers
         public ActionResult<WhateverReadDTO> PutWhatever(WhateverUpdateDTO whateverUpdateDTO)
         {
             var initialModel = _mapper.Map<InitialModel>(whateverUpdateDTO);
+            _modelContract.UpdateWhatever(initialModel);
         }
 
         private static readonly string[] Summaries = new[]
