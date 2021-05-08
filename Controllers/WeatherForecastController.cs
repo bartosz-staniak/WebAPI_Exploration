@@ -88,6 +88,8 @@ namespace API_exploration.Controllers
             // return Ok(InitialModelReadDTO); // used to be Ok(initialModel) but it also responded back with the SubmittedBy field
         }
 
+        [HttpPut]
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
