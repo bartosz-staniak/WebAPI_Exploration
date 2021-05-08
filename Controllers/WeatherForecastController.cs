@@ -93,6 +93,8 @@ namespace API_exploration.Controllers
         {
             var initialModel = _mapper.Map<InitialModel>(whateverUpdateDTO);
             _modelContract.UpdateWhatever(initialModel);
+
+            return Ok(initialModel);
         }
 
         private static readonly string[] Summaries = new[]
