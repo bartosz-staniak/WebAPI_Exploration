@@ -32,5 +32,10 @@ namespace API_exploration.Contract
         {
             throw new NotImplementedException();
         }
+
+        public void UpdateWhatever(InitialModel initialModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
