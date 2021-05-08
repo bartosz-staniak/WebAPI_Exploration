@@ -89,6 +89,10 @@ namespace API_exploration.Controllers
         }
 
         [HttpPut]
+        public ActionResult<WhateverReadDTO> PutWhatever(WhateverUpdateDTO whateverUpdateDTO)
+        {
+
+        }
 
         private static readonly string[] Summaries = new[]
         {
