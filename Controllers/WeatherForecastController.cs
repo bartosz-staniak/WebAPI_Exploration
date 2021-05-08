@@ -91,7 +91,7 @@ namespace API_exploration.Controllers
         [HttpPut]
         public ActionResult<WhateverReadDTO> PutWhatever(WhateverUpdateDTO whateverUpdateDTO)
         {
-
+            var initialModel = _mapper.Map<InitialModel>(whateverUpdateDTO);
         }
 
         private static readonly string[] Summaries = new[]
