@@ -38,5 +38,10 @@ namespace API_exploration.Contract
             }
             _context.InitialModels.Add(whatever);
         }
+
+        public void UpdateWhatever(InitialModel initialModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
