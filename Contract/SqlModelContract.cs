@@ -39,7 +39,7 @@ namespace API_exploration.Contract
             _context.InitialModels.Add(whatever);
         }
 
-        public void UpdateWhatever(InitialModel initialModel)
+        public void UpdateWhatever(InitialModel whatever)
         {
             throw new NotImplementedException();
             _context.InitialModels.Add(whatever);
