@@ -95,6 +95,7 @@ namespace API_exploration.Controllers
             _modelContract.UpdateWhatever(initialModel);
 
             var InitialModelUpdateDTO = _mapper.Map<WhateverReadDTO>(initialModel);
+            _modelContract.SaveChanges();
 
             return Ok(InitialModelUpdateDTO);
         }
