@@ -101,6 +101,10 @@ namespace API_exploration.Controllers
         }
 
         [HttpPut("{id}")]
+        public ActionResult PutWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
+        {
+
+        }
 
         private static readonly string[] Summaries = new[]
         {
