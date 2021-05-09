@@ -100,7 +100,7 @@ namespace API_exploration.Controllers
             return Ok(InitialModelUpdateDTO);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
 
         private static readonly string[] Summaries = new[]
         {
