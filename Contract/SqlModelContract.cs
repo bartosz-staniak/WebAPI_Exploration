@@ -41,7 +41,7 @@ namespace API_exploration.Contract
 
         public void UpdateWhatever(InitialModel whatever)
         {
-            _context.InitialModels.Add(whatever);
+            // _context.InitialModels.Add(whatever); // this instruction is not necessary it seems
         }
     }
 }
