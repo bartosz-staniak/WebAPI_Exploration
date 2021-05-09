@@ -96,7 +96,7 @@ namespace API_exploration.Controllers
 
             var InitialModelUpdateDTO = _mapper.Map<WhateverReadDTO>(initialModel);
 
-            return Ok(initialModel);
+            return Ok(InitialModelUpdateDTO);
         }
 
         private static readonly string[] Summaries = new[]
