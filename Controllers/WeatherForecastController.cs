@@ -100,6 +100,8 @@ namespace API_exploration.Controllers
             return Ok(InitialModelUpdateDTO);
         }
 
+        [HttpPut]
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
