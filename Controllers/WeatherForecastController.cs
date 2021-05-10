@@ -108,6 +108,9 @@ namespace API_exploration.Controllers
             {
                 return BadRequest(new { error = "No content available" });
             }
+
+            _mapper.Map(whateverUpdateDTO, getOneByIdFromRepo);
+
             return Ok(getOneByIdFromRepo);
         }
 
