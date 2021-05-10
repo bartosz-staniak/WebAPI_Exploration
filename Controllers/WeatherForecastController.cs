@@ -111,6 +111,8 @@ namespace API_exploration.Controllers
 
             _mapper.Map(whateverUpdateDTO, getOneByIdFromRepo);
 
+            _modelContract.UpdateWhatever(getOneByIdFromRepo);
+
             return Ok(getOneByIdFromRepo);
         }
 
