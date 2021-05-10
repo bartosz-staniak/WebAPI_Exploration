@@ -108,7 +108,7 @@ namespace API_exploration.Controllers
             {
                 return BadRequest(new { error = "No content available" });
             }
-            return getOneByIdFromRepo;
+            return Ok(getOneByIdFromRepo);
         }
 
         private static readonly string[] Summaries = new[]
