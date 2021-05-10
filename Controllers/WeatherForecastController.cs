@@ -113,6 +113,8 @@ namespace API_exploration.Controllers
 
             _modelContract.UpdateWhatever(getOneByIdFromRepo);
 
+            _modelContract.SaveChanges();
+
             return Ok(getOneByIdFromRepo);
         }
 
