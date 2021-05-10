@@ -104,7 +104,7 @@ namespace API_exploration.Controllers
         public ActionResult PutWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
         {
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
-            if (getOneByIdFromRepo.Summary == null)
+            if (getOneByIdFromRepo == null)
             {
                 return BadRequest(new { error = "No content available" });
             }
