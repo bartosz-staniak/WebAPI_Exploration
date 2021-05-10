@@ -108,6 +108,7 @@ namespace API_exploration.Controllers
             {
                 return BadRequest(new { error = "No content available" });
             }
+            return null;
         }
 
         private static readonly string[] Summaries = new[]
