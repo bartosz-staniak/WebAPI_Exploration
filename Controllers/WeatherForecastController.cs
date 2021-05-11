@@ -115,7 +115,7 @@ namespace API_exploration.Controllers
 
             _modelContract.SaveChanges();
 
-            return Ok(getOneByIdFromRepo);
+            return NoContent();
         }
 
         private static readonly string[] Summaries = new[]
