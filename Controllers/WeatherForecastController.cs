@@ -119,6 +119,10 @@ namespace API_exploration.Controllers
         }
 
         [HttpPatch]
+        public ActionResult PatchWhatever()
+        {
+
+        }
 
         private static readonly string[] Summaries = new[]
         {
