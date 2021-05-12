@@ -119,7 +119,7 @@ namespace API_exploration.Controllers
         }
 
         [HttpPatch("{id}")]
-        public ActionResult PatchWhatever()
+        public ActionResult PatchWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
         {
 
         }
