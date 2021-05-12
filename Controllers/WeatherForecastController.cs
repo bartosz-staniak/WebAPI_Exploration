@@ -122,7 +122,7 @@ namespace API_exploration.Controllers
         public ActionResult PatchWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
         {
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
-            // recommence here
+            
         }
 
         private static readonly string[] Summaries = new[]
