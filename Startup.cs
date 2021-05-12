@@ -35,6 +35,7 @@ namespace API_exploration
             .UseSqlServer(Configuration.GetConnectionString("WhateverConnection"))); // attempt to add another table to the database
 
             // services.AddControllers(); // This is what it used to be before NewtonsoftJson package addition
+            services.AddControllers();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
