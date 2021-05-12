@@ -118,6 +118,8 @@ namespace API_exploration.Controllers
             return NoContent();
         }
 
+        [HttpPatch]
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
