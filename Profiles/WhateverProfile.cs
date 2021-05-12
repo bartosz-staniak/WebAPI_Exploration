@@ -15,6 +15,7 @@ namespace API_exploration.Profiles
             CreateMap<InitialModel, WhateverReadDTO>();
             CreateMap<WhateverCreateDTO, InitialModel>();
             CreateMap<WhateverUpdateDTO, InitialModel>(); // attempt to fix a patch mapping issue
+            CreateMap<InitialModel, WhateverUpdateDTO>();
         }
     }
 }
