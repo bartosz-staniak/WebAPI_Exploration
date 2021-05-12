@@ -118,7 +118,7 @@ namespace API_exploration.Controllers
             return NoContent();
         }
 
-        [HttpPatch]
+        [HttpPatch("{id}")]
         public ActionResult PatchWhatever()
         {
 
