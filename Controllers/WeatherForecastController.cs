@@ -127,6 +127,8 @@ namespace API_exploration.Controllers
             {
                 return BadRequest(new { error = "No content available" });
             }
+
+            var WhateverToPatch = _mapper.Map<WhateverUpdateDTO>(getOneByIdFromRepo);
         }
 
         private static readonly string[] Summaries = new[]
