@@ -122,7 +122,11 @@ namespace API_exploration.Controllers
         [HttpPatch("{id}")]
         public ActionResult PatchWhatever(int id, JsonPatchDocument<WhateverUpdateDTO> jsonPatchDocument)
         {
-            
+            var getOneByIdFromRepo = _modelContract.GetOneById(id);
+            if (getOneByIdFromRepo == null)
+            {
+                return BadRequest(new { error = "No content available" });
+            }
         }
 
         private static readonly string[] Summaries = new[]
