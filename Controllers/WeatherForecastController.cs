@@ -119,9 +119,8 @@ namespace API_exploration.Controllers
         }
 
         [HttpPatch("{id}")]
-        public ActionResult PatchWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
+        public ActionResult PatchWhatever(int id, JsonPatchDocument<WhateverUpdateDTO> jsonPatchDocument)
         {
-            var getOneByIdFromRepo = _modelContract.GetOneById(id);
             
         }
 
