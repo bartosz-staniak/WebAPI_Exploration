@@ -129,6 +129,7 @@ namespace API_exploration.Controllers
             }
 
             var WhateverToPatch = _mapper.Map<WhateverUpdateDTO>(getOneByIdFromRepo);
+            jsonPatchDocument.ApplyTo(WhateverToPatch, ModelState);
         }
 
         private static readonly string[] Summaries = new[]
