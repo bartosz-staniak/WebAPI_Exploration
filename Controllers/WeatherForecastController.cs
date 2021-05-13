@@ -122,7 +122,7 @@ namespace API_exploration.Controllers
         [HttpPatch("{id}")]
         public ActionResult PatchWhatever(int id, JsonPatchDocument<WhateverUpdateDTO> jsonPatchDocument)
         {
-            
+            // recommence here
         }
 
         private static readonly string[] Summaries = new[]
