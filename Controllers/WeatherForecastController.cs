@@ -135,6 +135,8 @@ namespace API_exploration.Controllers
             {
                 return ValidationProblem(ModelState);
             }
+
+            _mapper.Map(WhateverToPatch, getOneByIdFromRepo);
         }
 
         private static readonly string[] Summaries = new[]
