@@ -130,6 +130,11 @@ namespace API_exploration.Controllers
 
             var WhateverToPatch = _mapper.Map<WhateverUpdateDTO>(getOneByIdFromRepo);
             jsonPatchDocument.ApplyTo(WhateverToPatch, ModelState);
+
+            if (!TryValidateModel(jsonPatchDocument))
+            {
+                return ValidationProblem(ModelState);
+            }
         }
 
         private static readonly string[] Summaries = new[]
