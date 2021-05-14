@@ -138,7 +138,7 @@ namespace API_exploration.Controllers
 
             _mapper.Map(WhateverToPatch, getOneByIdFromRepo);
 
-            return null;
+            
         }
 
         private static readonly string[] Summaries = new[]
