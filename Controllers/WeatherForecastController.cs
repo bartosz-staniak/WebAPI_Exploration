@@ -141,6 +141,8 @@ namespace API_exploration.Controllers
             _modelContract.UpdateWhatever(getOneByIdFromRepo); // not really needed in this implementation
 
             _modelContract.SaveChanges();
+
+            return NoContent();
             
         }
 
