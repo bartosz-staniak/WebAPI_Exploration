@@ -7,3 +7,12 @@ POST
 	"Summary" : "Sunny",
 	"SubmittedBy" : "Someone"
 }
+
+PATCH
+[
+	{
+		"op" : "replace",
+		"path" : "/RainChance",
+		"value" : 0
+	}
+]
