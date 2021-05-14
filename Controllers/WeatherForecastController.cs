@@ -138,6 +138,7 @@ namespace API_exploration.Controllers
 
             _mapper.Map(WhateverToPatch, getOneByIdFromRepo);
 
+            _modelContract.UpdateWhatever(getOneByIdFromRepo); // not really needed in this implementation
             
         }
 
