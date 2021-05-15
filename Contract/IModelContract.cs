@@ -14,5 +14,6 @@ namespace API_exploration.Contract
         InitialModel GetOneById(int id);
         void CreateWhatever(InitialModel initialModel);
         void UpdateWhatever(InitialModel initialModel);
+        void DeleteWhatever(InitialModel initialModel);
     }
 }
