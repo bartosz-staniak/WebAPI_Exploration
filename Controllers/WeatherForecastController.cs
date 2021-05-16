@@ -147,6 +147,10 @@ namespace API_exploration.Controllers
         }
 
         [HttpDelete]
+        public ActionResult DeleteWhatever(int id)
+        {
+
+        }
 
         private static readonly string[] Summaries = new[]
         {
