@@ -37,5 +37,10 @@ namespace API_exploration.Contract
         {
             throw new NotImplementedException();
         }
+
+        public void DeleteWhatever(InitialModel initialModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
