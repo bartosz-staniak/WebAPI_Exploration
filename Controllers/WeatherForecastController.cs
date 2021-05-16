@@ -146,6 +146,8 @@ namespace API_exploration.Controllers
             
         }
 
+        [HttpDelete]
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Stormy"
