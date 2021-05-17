@@ -46,6 +46,11 @@ namespace API_exploration.Contract
 
         public void DeleteWhatever(InitialModel whatever)
         {
+            if (whatever == null)
+            {
+                throw new ArgumentNullException(nameof(whatever));
+            }
+
             throw new NotImplementedException();
         }
     }
