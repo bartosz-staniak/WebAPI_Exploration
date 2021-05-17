@@ -52,8 +52,6 @@ namespace API_exploration.Contract
             }
             _context.InitialModels.Remove(whatever);
 
-            return null;
-
         }
     }
 }
