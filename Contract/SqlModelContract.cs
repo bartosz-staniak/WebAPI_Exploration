@@ -54,7 +54,6 @@ namespace API_exploration.Contract
 
             return null;
 
-            throw new NotImplementedException();
         }
     }
 }
