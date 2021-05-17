@@ -52,6 +52,8 @@ namespace API_exploration.Contract
             }
             _context.InitialModels.Remove(whatever);
 
+            // recommence here
+
             throw new NotImplementedException();
         }
     }
