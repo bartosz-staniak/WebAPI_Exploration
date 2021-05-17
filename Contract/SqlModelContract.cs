@@ -44,7 +44,7 @@ namespace API_exploration.Contract
             // _context.InitialModels.Add(whatever); // this instruction is not necessary it seems
         }
 
-        public void DeleteWhatever(InitialModel initialModel)
+        public void DeleteWhatever(InitialModel whatever)
         {
             throw new NotImplementedException();
         }
