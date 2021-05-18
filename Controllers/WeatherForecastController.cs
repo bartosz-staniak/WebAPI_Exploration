@@ -150,6 +150,10 @@ namespace API_exploration.Controllers
         public ActionResult DeleteWhatever(int id)
         {
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
+            if (getOneByIdFromRepo == null)
+            {
+                return BadRequest(new { error = "No content available" });
+            }
         }
 
         private static readonly string[] Summaries = new[]
