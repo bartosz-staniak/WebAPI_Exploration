@@ -149,7 +149,7 @@ namespace API_exploration.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteWhatever(int id)
         {
-            
+            var getOneByIdFromRepo = _modelContract.GetOneById(id);
         }
 
         private static readonly string[] Summaries = new[]
