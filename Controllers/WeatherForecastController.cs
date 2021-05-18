@@ -146,7 +146,7 @@ namespace API_exploration.Controllers
             
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public ActionResult DeleteWhatever(int id)
         {
             
