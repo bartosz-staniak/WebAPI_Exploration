@@ -125,7 +125,7 @@ namespace API_exploration.Controllers
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
             if (getOneByIdFromRepo == null)
             {
-                return BadRequest(new { error = "No content to delete." });
+                return BadRequest(new { error = "No content available." });
             }
 
             var WhateverToPatch = _mapper.Map<WhateverUpdateDTO>(getOneByIdFromRepo);
