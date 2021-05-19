@@ -162,6 +162,7 @@ namespace API_exploration.Controllers
                     _modelContract.DeleteWhatever(getOneByIdFromRepo);
                 }
             }
+            /*
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
             
             if (getOneByIdFromRepo == null)
@@ -169,6 +170,7 @@ namespace API_exploration.Controllers
                 return BadRequest(new { error = "No content available" });
             }
             _modelContract.DeleteWhatever(getOneByIdFromRepo);
+            */
 
 
             
