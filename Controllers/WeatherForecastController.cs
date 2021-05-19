@@ -160,6 +160,7 @@ namespace API_exploration.Controllers
                     return BadRequest(new { error = "No content available" });
                 } else {
                     _modelContract.DeleteWhatever(getOneByIdFromRepo);
+                    resourceDeleted = true;
                 }
             }
             /*
