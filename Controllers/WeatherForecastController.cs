@@ -149,7 +149,7 @@ namespace API_exploration.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteWhatever(int id)
         {
-            Boolean resourceFalse = true;
+            Boolean resourceDeleted = true;
 
             while (resourcePresent)
             {
