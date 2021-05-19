@@ -155,7 +155,7 @@ namespace API_exploration.Controllers
                 return BadRequest(new { error = "No content available" });
             }
             _modelContract.DeleteWhatever(getOneByIdFromRepo);
-            return null;
+            
         }
 
         private static readonly string[] Summaries = new[]
