@@ -159,7 +159,7 @@ namespace API_exploration.Controllers
                 {
                     return BadRequest(new { error = "No content available" });
                 } else if {
-
+                    _modelContract.DeleteWhatever(getOneByIdFromRepo);
                 }
             }
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
