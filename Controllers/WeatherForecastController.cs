@@ -151,11 +151,11 @@ namespace API_exploration.Controllers
         {
             Boolean resourceDeleted = true;
 
-            while (resourcePresent)
+            while (resourceDeleted)
             {
                 var getOneByIdFromRepo = _modelContract.GetOneById(id);
 
-                if (getOneByIdFromRepo == null && resourcePresent)
+                if (getOneByIdFromRepo == null && resourceDeleted)
                 {
                     return BadRequest(new { error = "No content available" });
                 } else if {
