@@ -163,6 +163,8 @@ namespace API_exploration.Controllers
                     resourceDeleted = true;
                 }
             }
+            return NoContent();
+            
             /*
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
             
