@@ -149,12 +149,16 @@ namespace API_exploration.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteWhatever(int id)
         {
+            Boolean resourcePresent = true;
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
+            
             if (getOneByIdFromRepo == null)
             {
                 return BadRequest(new { error = "No content available" });
             }
             _modelContract.DeleteWhatever(getOneByIdFromRepo);
+
+
             
         }
 
