@@ -158,6 +158,8 @@ namespace API_exploration.Controllers
                 if (getOneByIdFromRepo == null)
                 {
                     return BadRequest(new { error = "No content available" });
+                } else if {
+
                 }
             }
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
