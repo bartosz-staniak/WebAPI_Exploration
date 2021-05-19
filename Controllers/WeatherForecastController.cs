@@ -150,6 +150,11 @@ namespace API_exploration.Controllers
         public ActionResult DeleteWhatever(int id)
         {
             Boolean resourcePresent = true;
+
+            while (resourcePresent)
+            {
+
+            }
             var getOneByIdFromRepo = _modelContract.GetOneById(id);
             
             if (getOneByIdFromRepo == null)
