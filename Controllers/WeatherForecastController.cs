@@ -151,7 +151,7 @@ namespace API_exploration.Controllers
         {
             Boolean resourceDeleted = false;
 
-            while (resourceDeleted)
+            while (!resourceDeleted)
             {
                 var getOneByIdFromRepo = _modelContract.GetOneById(id);
 
