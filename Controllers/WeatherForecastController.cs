@@ -158,7 +158,7 @@ namespace API_exploration.Controllers
                 if (getOneByIdFromRepo == null && !resourceDeleted)
                 {
                     return BadRequest(new { error = "No content available" });
-                } else if {
+                } else {
                     _modelContract.DeleteWhatever(getOneByIdFromRepo);
                 }
             }
