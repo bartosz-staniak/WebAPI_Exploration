@@ -155,7 +155,7 @@ namespace API_exploration.Controllers
             {
                 var getOneByIdFromRepo = _modelContract.GetOneById(id);
 
-                if (getOneByIdFromRepo == null)
+                if (getOneByIdFromRepo == null && resourcePresent)
                 {
                     return BadRequest(new { error = "No content available" });
                 } else if {
