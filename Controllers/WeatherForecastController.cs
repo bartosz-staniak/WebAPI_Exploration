@@ -32,7 +32,7 @@ namespace API_exploration.Controllers
         public ActionResult <IEnumerable<WhateverReadDTO>> GetWhateverItReturns() // old return type was <IEnumerable<WeatherForecast>> // used to be GetWhateverItReturnsMocked
         {
             var whatevers = _modelContract.GetWhateverItReturns();
-            var whateversLimited = _mapper.Map<IEnumerable<WhateverReadDTO>>(whatevers);
+            var whateversLimited = _mapper.Map<IEnumerable<WhateverReadDTO>>(whatevers); // perhaps it would be better to create another route for it
             
             return Ok(_mapper.Map<IEnumerable<WhateverReadDTO>>(whatevers)); // old return used to be Ok(whatevers)
         }
