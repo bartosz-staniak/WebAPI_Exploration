@@ -29,6 +29,7 @@ namespace API_exploration.Controllers
             return NotFound();
         }
 
+        //api/Another
         [HttpGet]
         public ActionResult<IEnumerable<Locations>> Get()
         {
