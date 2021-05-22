@@ -47,6 +47,8 @@ namespace API_exploration
 
             services.AddScoped<IAnotherContract, SqlAnotherContract>();
 
+            // CORS starts here
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: MyAllowSpecificOrigins,
