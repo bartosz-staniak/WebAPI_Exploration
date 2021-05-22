@@ -56,7 +56,7 @@ namespace API_exploration
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://127.0.0.1:5500/"); // this isn't enough it seems
+                                      builder.WithOrigins("http://127.0.0.1:5500"); // this isn't enough it seems
                                   });
             });
 
