@@ -46,6 +46,19 @@ namespace API_exploration
             services.AddScoped<IModelContract, SqlModelContract>();
 
             services.AddScoped<IAnotherContract, SqlAnotherContract>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://example.com",
+                                                          "http://www.contoso.com");
+                                  });
+            });
+
+            // services.AddResponseCaching();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
