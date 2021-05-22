@@ -54,8 +54,7 @@ namespace API_exploration
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://example.com",
-                                                          "http://www.contoso.com");
+                                      builder.WithOrigins("http://127.0.0.1:5500/");
                                   });
             });
 
