@@ -56,7 +56,8 @@ namespace API_exploration
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://127.0.0.1:5500"); // removing the slash at the end worked
+                                      builder.WithOrigins("http://127.0.0.1:5500")
+                                      .WithHeaders("content-type", "application/json"); // removing the slash at the end worked
                                   });
             });
 
