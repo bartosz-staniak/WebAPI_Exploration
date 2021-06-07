@@ -57,7 +57,7 @@ namespace API_exploration
                                   builder =>
                                   {
                                       builder.WithOrigins("http://127.0.0.1:5500")
-                                      .WithHeaders("content-type", "application/json"); // removing the slash at the end worked
+                                      .WithHeaders("Content-Type", "application/json"); // removing the slash at the end worked
                                   });
             });
 
