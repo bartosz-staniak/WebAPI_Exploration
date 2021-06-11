@@ -12,7 +12,7 @@ namespace API_exploration.Models
         public int id { get; set; }
         
         [Required]
-        [DataType(DataType.Date)] // take down and renew migration for it to work
+        [DataType(DataType.DateTime)] // take down and renew migration for it to work
         public DateTime Date { get; set; } // date is always set to 0001-01-01T00:00:00
 
         [Required] // field can be empty when just "" are sent
