@@ -57,7 +57,7 @@ namespace API_exploration
                                   builder =>
                                   {
                                       builder.WithOrigins("http://127.0.0.1:5500")
-                                      .AllowAnyHeader(); // removing the slash at the address end worked
+                                      .AllowAnyHeader().WithMethods("PUT, GET"); // removing the slash at the address end worked
                                   });
             });
 
