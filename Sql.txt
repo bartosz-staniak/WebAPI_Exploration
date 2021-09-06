@@ -1,0 +1,4 @@
+SELECT *
+  FROM [WhateverDB].[dbo].[InitialModels]
+  FULL OUTER JOIN [WhateverDB].[dbo].[AnotherModels]
+  ON [WhateverDB].[dbo].[InitialModels].Location = [WhateverDB].[dbo].[AnotherModels].Location
