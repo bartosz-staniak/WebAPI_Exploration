@@ -25,13 +25,13 @@ namespace API_exploration.Contract
             return _context.AnotherModels.ToList();
         }
 
-        public void CreateWhatever(InitialModel whatever)
+        public void CreateAnother(AnotherModel another)
         {
-            if (whatever == null)
+            if (another == null)
             {
-                throw new ArgumentNullException(nameof(whatever));
+                throw new ArgumentNullException(nameof(another));
             }
-            _context.InitialModels.Add(whatever);
+            _context.AnotherModels.Add(another);
         }
 
     }
