@@ -64,6 +64,7 @@ namespace API_exploration
             // services.AddResponseCaching();
             services.AddControllers();
 
+            // The following code does not seem to do the job I wanted in prettifying the JSON output
             /*services.AddMvc()
                 .AddJsonOptions(options =>
                 {
