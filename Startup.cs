@@ -64,11 +64,11 @@ namespace API_exploration
             // services.AddResponseCaching();
             services.AddControllers();
 
-            services.AddMvc()
+            /*services.AddMvc()
                 .AddJsonOptions(options =>
                 {
                     options.JsonSerializerOptions.WriteIndented = true;
-                });
+                });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
