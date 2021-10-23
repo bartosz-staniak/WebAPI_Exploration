@@ -13,7 +13,7 @@ namespace API_exploration.Models
         
         [Required]
         [DataType(DataType.DateTime)] // take down and renew migration for it to work
-        public DateTime DateAndTime { get; set; } // date is always set to 0001-01-01T00:00:00
+        public DateTime DateAndTime { get; set; } // date is always set to 0001-01-01T00:00:00 // this was a mapping issue
 
         [Required] // field can be empty when just "" are sent
         public string Location { get; set; }
