@@ -111,7 +111,8 @@ namespace API_exploration.Controllers
             {
                 return BadRequest(new { error = "No content available" });
             }
-            else if (whateverUpdateDTO.TemperatureC > 60)
+            
+            if (whateverUpdateDTO.TemperatureC > 60)
             {
                 return BadRequest(new { error = "The temperature cannot be higher than 60" });
             }
