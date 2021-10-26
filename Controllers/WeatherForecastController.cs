@@ -94,10 +94,6 @@ namespace API_exploration.Controllers
         [HttpPut]
         public ActionResult<WhateverReadDTO> PutWhatever(WhateverUpdateDTO whateverUpdateDTO)
         {
-            if(whateverUpdateDTO.TemperatureC > 60)
-            {
-                return BadRequest(new { error = "The temperature cannot be higher than 60" });
-            }
             var initialModel = _mapper.Map<InitialModel>(whateverUpdateDTO);
             _modelContract.UpdateWhatever(initialModel);
 
