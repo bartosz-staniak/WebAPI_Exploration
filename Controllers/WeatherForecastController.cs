@@ -111,6 +111,10 @@ namespace API_exploration.Controllers
             {
                 return BadRequest(new { error = "No content available" });
             }
+            else if (getOneByIdFromRepo.TemperatureC > 60)
+            {
+                return BadRequest(new { error = "The temperature cannot be higher than 60" });
+            }
 
             _mapper.Map(whateverUpdateDTO, getOneByIdFromRepo);
 
