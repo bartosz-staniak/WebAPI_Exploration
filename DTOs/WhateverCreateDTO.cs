@@ -18,7 +18,7 @@ namespace API_exploration.DTOs
 
         public int TemperatureC { get; set; }
 
-        [Range(0,90)] // range validation works in this Create DTO context; it's also doubled in the controller
+        [Range(0,80)] // range validation works in this Create DTO context; it's also doubled in the controller
         public int RainChance { get; set; }
 
         [Required]
