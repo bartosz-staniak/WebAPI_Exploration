@@ -8,7 +8,7 @@ namespace API_exploration
 
         public string Location_Size { get; set; }
 
-        public string Population { get; set; }
+        public int Population { get; set; }
 
         public string SubmittedBy { get; set; }
     }
