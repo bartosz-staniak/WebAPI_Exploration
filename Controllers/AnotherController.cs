@@ -37,5 +37,28 @@ namespace API_exploration.Controllers
             var anotherLocations = _anotherContract.GetAllLocations();
             return Ok(anotherLocations);
         }
+
+        [HttpPut("{id}")]
+        public ActionResult PutWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
+        {
+            var getOneByIdFromRepo = _modelContract.GetOneById(id);
+            if (getOneByIdFromRepo == null)
+            {
+                return BadRequest(new { error = "No content available" });
+            }
+
+            if (whateverUpdateDTO.TemperatureC > 60)
+            {
+                return BadRequest(new { error = "The temperature cannot be higher than 60" });
+            }
+
+            _mapper.Map(whateverUpdateDTO, getOneByIdFromRepo);
+
+            _modelContract.UpdateWhatever(getOneByIdFromRepo);  // not really needed in this implementation
+
+            _modelContract.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
