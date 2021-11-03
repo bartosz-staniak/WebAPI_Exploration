@@ -14,6 +14,12 @@ namespace API_exploration.DTOs
         public string Location { get; set; }
 
         [Required]
+        public string Location_Size { get; set; }
+
+        [Required]
+        public string Population { get; set; }
+
+        [Required]
         public string SubmittedBy { get; set; }
     }
 }
