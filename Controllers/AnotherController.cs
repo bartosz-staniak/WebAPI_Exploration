@@ -39,20 +39,20 @@ namespace API_exploration.Controllers
         }
 
         [HttpPut("{id}")]
-        public ActionResult PutWhatever(int id, WhateverUpdateDTO whateverUpdateDTO)
+        public ActionResult PutWhatever(int id, AnotherUpdateDTO anotherUpdateDTO)
         {
-            var getOneByIdFromRepo = _modelContract.GetOneById(id);
+            var getOneByIdFromRepo = _anotherContract.GetOneById(id);
             if (getOneByIdFromRepo == null)
             {
                 return BadRequest(new { error = "No content available" });
             }
 
-            if (whateverUpdateDTO.TemperatureC > 60)
+            if (anotherUpdateDTO.TemperatureC > 60)
             {
                 return BadRequest(new { error = "The temperature cannot be higher than 60" });
             }
 
-            _mapper.Map(whateverUpdateDTO, getOneByIdFromRepo);
+            _mapper.Map(anotherUpdateDTO, getOneByIdFromRepo);
 
             _modelContract.UpdateWhatever(getOneByIdFromRepo);  // not really needed in this implementation
 
