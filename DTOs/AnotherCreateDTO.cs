@@ -11,7 +11,7 @@ namespace API_exploration.DTOs
         // public int id { get; set; } // the database will take care of assigning an id
 
         [Required]
-        public string Location { get; set; }
+        public string Location { get; set; } // as per the comment above these two lines could be redundant
 
         [Required]
         public string Location_Size { get; set; }
