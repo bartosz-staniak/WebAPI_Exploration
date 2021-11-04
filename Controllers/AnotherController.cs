@@ -38,7 +38,7 @@ namespace API_exploration.Controllers
             return Ok(anotherLocations);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{locationName}")]
         public ActionResult PutWhatever(int id, AnotherUpdateDTO anotherUpdateDTO)
         {
             var getOneByIdFromRepo = _anotherContract.GetOneById(id);
