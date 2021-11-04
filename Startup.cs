@@ -47,7 +47,7 @@ namespace API_exploration
             // services.AddScoped<IModelContract, MockModelContract>();
             services.AddScoped<IModelContract, SqlModelContract>();
 
-            services.AddScoped<IAnotherContract, SqlAnotherContract>();
+            services.AddScoped<IAnotherModelContract, SqlAnotherModelContract>();
 
             // CORS starts here
 
