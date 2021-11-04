@@ -45,14 +45,14 @@ namespace API_exploration.Controllers
         public ActionResult PutWhatever(string location, AnotherUpdateDTO anotherUpdateDTO)
         {
             var getOneLocationByNameFromRepo = _anotherContract.GetOneLocationByName(location);
-            if (getOneByIdFromRepo == null)
+            if (getOneLocationByNameFromRepo == null)
             {
                 return BadRequest(new { error = "No content available" });
             }
 
-            _mapper.Map(anotherUpdateDTO, getOneByIdFromRepo);
+            _mapper.Map(anotherUpdateDTO, getOneLocationByNameFromRepo);
 
-            _modelContract.UpdateWhatever(getOneByIdFromRepo);  // not really needed in this implementation
+            _modelContract.UpdateWhatever(getOneLocationByNameFromRepo);  // not really needed in this implementation
 
             _modelContract.SaveChanges();
 
