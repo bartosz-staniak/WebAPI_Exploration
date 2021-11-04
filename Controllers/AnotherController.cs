@@ -38,8 +38,8 @@ namespace API_exploration.Controllers
             return Ok(anotherLocations);
         }
 
-        [HttpPut("{locationName}")]
-        public ActionResult PutWhatever(string locationName, AnotherUpdateDTO anotherUpdateDTO)
+        [HttpPut("{location}")] // location name
+        public ActionResult PutWhatever(string location, AnotherUpdateDTO anotherUpdateDTO)
         {
             var getOneByIdFromRepo = _anotherContract.GetOneById(id);
             if (getOneByIdFromRepo == null)
