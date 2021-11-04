@@ -18,14 +18,14 @@ namespace API_exploration.Controllers
 
         public AnotherController(IAnotherModelContract anotherModelContract)
         {
-            _anotherContract = anotherModelContract;
+            _anotherModelContract = anotherModelContract;
         }
 
         //api/another/
         [HttpGet("{location}")]
         public ActionResult<Locations> GetLocationByName(string location)
         {
-            var getByLocation = _anotherContract.GetOneLocationByName(location);
+            var getByLocation = _anotherModelContract.GetOneLocationByName(location);
             if (getByLocation != null)
             {
                 return Ok(getByLocation);
@@ -37,14 +37,14 @@ namespace API_exploration.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Locations>> Get()
         {
-            var anotherLocations = _anotherContract.GetAllLocations();
+            var anotherLocations = _anotherModelContract.GetAllLocations();
             return Ok(anotherLocations);
         }
 
         [HttpPut("{location}")] // location name
         public ActionResult PutAnother(string location, AnotherUpdateDTO anotherUpdateDTO)
         {
-            var getOneLocationByNameFromRepo = _anotherContract.GetOneLocationByName(location);
+            var getOneLocationByNameFromRepo = _anotherModelContract.GetOneLocationByName(location);
             if (getOneLocationByNameFromRepo == null)
             {
                 return BadRequest(new { error = "No content available" });
@@ -52,9 +52,9 @@ namespace API_exploration.Controllers
 
             _mapper.Map(anotherUpdateDTO, getOneLocationByNameFromRepo);
 
-            _modelContract.UpdateWhatever(getOneLocationByNameFromRepo);  // not really needed in this implementation
+            _anotherModelContract.UpdateWhatever(getOneLocationByNameFromRepo);  // not really needed in this implementation
 
-            _modelContract.SaveChanges();
+            _anotherModelContract.SaveChanges();
 
             return NoContent();
         }
