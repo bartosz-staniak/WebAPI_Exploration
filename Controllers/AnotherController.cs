@@ -13,7 +13,7 @@ namespace API_exploration.Controllers
     [Route("api/[controller]")]
     public class AnotherController : ControllerBase
     {
-        private readonly IAnotherModelContract _anotherContract;
+        private readonly IAnotherModelContract _anotherModelContract;
         private readonly IMapper _mapper;
 
         public AnotherController(IAnotherModelContract anotherContract)
