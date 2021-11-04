@@ -44,7 +44,7 @@ namespace API_exploration.Controllers
         [HttpPut("{location}")] // location name
         public ActionResult PutWhatever(string location, AnotherUpdateDTO anotherUpdateDTO)
         {
-            var getOneLocationByNameFromRepo = _anotherContract.GetOneById(id);
+            var getOneLocationByNameFromRepo = _anotherContract.GetOneLocationByName(location);
             if (getOneByIdFromRepo == null)
             {
                 return BadRequest(new { error = "No content available" });
