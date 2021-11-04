@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace API_exploration.DTOs
 {
-    public class AnotherUpdateDTO
+    public class AnotherUpdateDTO : AnotherCreateDTO
     {
+
     }
 }
