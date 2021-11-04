@@ -52,7 +52,7 @@ namespace API_exploration.Controllers
 
             _mapper.Map(anotherUpdateDTO, getOneLocationByNameFromRepo);
 
-            _anotherModelContract.UpdateWhatever(getOneLocationByNameFromRepo);  // not really needed in this implementation
+            _anotherModelContract.UpdateAnother(getOneLocationByNameFromRepo);  // not really needed in this implementation
 
             _anotherModelContract.SaveChanges();
 
