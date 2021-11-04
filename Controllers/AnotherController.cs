@@ -12,6 +12,7 @@ namespace API_exploration.Controllers
     public class AnotherController : ControllerBase
     {
         private readonly IAnotherContract _anotherContract;
+        private readonly IMapper _mapper;
 
         public AnotherController(IAnotherContract anotherContract)
         {
