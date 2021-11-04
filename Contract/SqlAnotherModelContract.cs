@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace API_exploration.Contract
 {
-    public class SqlAnotherContract : IAnotherModelContract
+    public class SqlAnotherModelContract : IAnotherModelContract
     {
         private readonly AnotherContext _context;
 
-        public SqlAnotherContract(AnotherContext context)
+        public SqlAnotherModelContract(AnotherContext context)
         {
             _context = context;
         }
