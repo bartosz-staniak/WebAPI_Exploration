@@ -9,5 +9,6 @@ namespace API_exploration.Contract
 
         IEnumerable<AnotherModel> GetAllLocations();
         AnotherModel GetOneLocationByName(string location);
+        void UpdateAnother(AnotherModel anotherModel);
     }
 }
