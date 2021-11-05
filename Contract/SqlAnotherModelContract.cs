@@ -25,6 +25,11 @@ namespace API_exploration.Contract
             return _anotherContext.AnotherModels.ToList();
         }
 
+        public bool SaveChanges()
+        {
+            return (_anotherContext.SaveChanges() >= 0);
+        }
+
         public void CreateAnother(AnotherModel another)
         {
             if (another == null)
