@@ -39,5 +39,11 @@ namespace API_exploration.Contract
             _anotherContext.AnotherModels.Add(another);
         }
 
+        public void UpdateAnother(AnotherModel another)
+        {
+            // _anotherContext.AnotherModels.Add(another); // this instruction is not necessary it seems
+        }
+
+
     }
 }
