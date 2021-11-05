@@ -8,21 +8,21 @@ namespace API_exploration.Contract
 {
     public class SqlAnotherModelContract : IAnotherModelContract
     {
-        private readonly AnotherContext _context;
+        private readonly AnotherContext _anotherContext;
 
         public SqlAnotherModelContract(AnotherContext context)
         {
-            _context = context;
+            _anotherContext = context;
         }
         
         public AnotherModel GetOneLocationByName(string location)
         {
-            return _context.AnotherModels.FirstOrDefault(p => p.Location == location);
+            return _anotherContext.AnotherModels.FirstOrDefault(p => p.Location == location);
         }
         
         public IEnumerable<AnotherModel> GetAllLocations()
         {
-            return _context.AnotherModels.ToList();
+            return _anotherContext.AnotherModels.ToList();
         }
 
         public void CreateAnother(AnotherModel another)
@@ -31,7 +31,7 @@ namespace API_exploration.Contract
             {
                 throw new ArgumentNullException(nameof(another));
             }
-            _context.AnotherModels.Add(another);
+            _anotherContext.AnotherModels.Add(another);
         }
 
     }
