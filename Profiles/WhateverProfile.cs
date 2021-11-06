@@ -21,6 +21,6 @@ namespace API_exploration.Profiles
 
     public class AnotherProfile :Profile
     {
-
+        CreateMap<AnotherModel, AnotherUpdateDTO>();
     }
 }
