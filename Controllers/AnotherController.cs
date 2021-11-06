@@ -50,7 +50,7 @@ namespace API_exploration.Controllers
                 return BadRequest(new { error = "No content available" });
             }
 
-            _mapper.Map(anotherUpdateDTO, getOneLocationByNameFromRepo);
+            _mapper.Map(anotherUpdateDTO, getOneLocationByNameFromRepo); // null reference exception thrwon
 
             _anotherModelContract.UpdateAnother(getOneLocationByNameFromRepo);  // not really needed in this implementation
 
