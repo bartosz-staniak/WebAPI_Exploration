@@ -18,4 +18,9 @@ namespace API_exploration.Profiles
             CreateMap<InitialModel, WhateverUpdateDTO>();
         }
     }
+
+    public class AnotherProfile :Profile
+    {
+
+    }
 }
