@@ -19,6 +19,7 @@ namespace API_exploration.Controllers
         public AnotherController(IAnotherModelContract anotherModelContract)
         {
             _anotherModelContract = anotherModelContract;
+            _mapper = mapper;
         }
 
         //api/another/
