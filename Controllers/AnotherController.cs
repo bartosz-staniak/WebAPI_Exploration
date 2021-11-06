@@ -16,7 +16,7 @@ namespace API_exploration.Controllers
         private readonly IAnotherModelContract _anotherModelContract;
         private readonly IMapper _mapper;
 
-        public AnotherController(IAnotherModelContract anotherModelContract)
+        public AnotherController(IAnotherModelContract anotherModelContract, IMapper mapper)
         {
             _anotherModelContract = anotherModelContract;
             _mapper = mapper;
