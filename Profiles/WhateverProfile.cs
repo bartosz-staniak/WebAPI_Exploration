@@ -21,6 +21,10 @@ namespace API_exploration.Profiles
 
     public class AnotherProfile : Profile
     {
+        public AnotherProfile()
+        {
+
+        }
         CreateMap<AnotherModel, AnotherUpdateDTO>();
     }
 }
