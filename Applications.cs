@@ -4,6 +4,10 @@ namespace API_exploration
 {
     public class Applications
     {
+        public int Id { get; set; }
+
+        public DateTime Date { get; set; }
+
         public string Company { get; set; }
 
         public string Position { get; set; }
