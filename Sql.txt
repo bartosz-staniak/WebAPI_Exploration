@@ -2,3 +2,15 @@ SELECT *
   FROM [WhateverDB].[dbo].[InitialModels]
   FULL OUTER JOIN [WhateverDB].[dbo].[AnotherModels]
   ON [WhateverDB].[dbo].[InitialModels].Location = [WhateverDB].[dbo].[AnotherModels].Location
+
+Creating a stored procedure:
+USE WhateverDB
+GO
+
+CREATE PROCEDURE dbo.SelectInitialModels
+AS
+SELECT * FROM dbo.InitialModels
+GO
+
+Using the stored procedure:
+EXEC dbo.SelectInitialModels
