@@ -3,6 +3,22 @@ SELECT *
   FULL OUTER JOIN [WhateverDB].[dbo].[AnotherModels]
   ON [WhateverDB].[dbo].[InitialModels].Location = [WhateverDB].[dbo].[AnotherModels].Location
 
+
+USE WhateverDB
+GO
+
+CREATE PROCEDURE dbo.SelectInitialAnotherUnion
+AS
+SELECT *
+  FROM [WhateverDB].[dbo].[InitialModels]
+  FULL OUTER JOIN [WhateverDB].[dbo].[AnotherModels]
+  ON [WhateverDB].[dbo].[InitialModels].Location = [WhateverDB].[dbo].[AnotherModels].Location
+GO
+
+EXEC dbo.SelectInitialAnotherUnion
+
+------------------------------
+
 Creating a stored procedure:
 USE WhateverDB
 GO
